@@ -1,0 +1,23 @@
+kind = "mobile"
+previewPath = "/"
+title = "برنامج الفرق الفنية"
+version = "1.0.0"
+id = "artifacts/field-teams"
+router = "expo-domain"
+
+[[services]]
+name = "expo"
+ensurePreviewReachable = "/status"
+paths = [ "/" ]
+localPort = 21864
+
+[services.development]
+run = "pnpm --filter @workspace/field-teams run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/field-teams", "run", "build" ]
+run = [ "pnpm", "--filter", "@workspace/field-teams", "run", "serve" ]
+
+[services.env]
+PORT = "21864"
+BASE_PATH = "/"
