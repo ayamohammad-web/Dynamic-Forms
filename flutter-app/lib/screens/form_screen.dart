@@ -139,7 +139,7 @@ class _FormScreenState extends State<FormScreen> {
 
     if (task == null || schema == null) {
       return Scaffold(
-        appBar: AppHeader(title: 'النموذج', showBack: true),
+        appBar: const AppHeader(title: 'النموذج', showBack: true),
         body: const Center(child: Text('النموذج غير موجود')),
       );
     }

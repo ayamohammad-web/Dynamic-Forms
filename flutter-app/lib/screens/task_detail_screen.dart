@@ -22,7 +22,7 @@ class TaskDetailScreen extends StatelessWidget {
 
     if (task == null) {
       return Scaffold(
-        appBar: AppHeader(title: 'تفاصيل العطل', showBack: true),
+        appBar: const AppHeader(title: 'تفاصيل العطل', showBack: true),
         body: const Center(child: Text('المهمة غير موجودة')),
       );
     }
@@ -72,7 +72,7 @@ class TaskDetailScreen extends StatelessWidget {
     }
 
     return Scaffold(
-      appBar: AppHeader(title: 'تفاصيل العطل', showBack: true),
+      appBar: const AppHeader(title: 'تفاصيل العطل', showBack: true),
       body: SingleChildScrollView(
         child: Column(
           children: [

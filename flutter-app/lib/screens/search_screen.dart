@@ -61,7 +61,7 @@ class _SearchScreenState extends State<SearchScreen> {
     final results = _search(tasks.tasks);
 
     return Scaffold(
-      appBar: AppHeader(title: 'بحث عن خدمة', showBack: true),
+      appBar: const AppHeader(title: 'بحث عن خدمة', showBack: true),
       body: Column(
         children: [
           // Banner
